@@ -1,0 +1,4 @@
+id,name,category,summary,offerings,keywords,website,phone,address,city,state,zip,hours,latitude,longitude,image_url,menu_url,booking_url
+1,Maple Street Collective,Restaurant,"Breakfast + coffee with fast pickup and vegan options.","Espresso; pastries; breakfast bowls","cafe,coffee,breakfast,vegan","https://example.com","(555) 201-0003","45 Piedmont Ave","Atlanta","GA","30303","Daily 7–3",33.7546,-84.3877,"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg","https://example.com/menu",""
+2,hours,"Our hours are listed in the Hours section on the homepage. If you tell me which day, I can confirm if we’re open.",hours,location
+3,Monday, "We’re open from 9 AM to 5 PM on Mondays.",hours,location
