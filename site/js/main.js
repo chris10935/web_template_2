@@ -4,12 +4,24 @@
   if (y) y.textContent = new Date().getFullYear();
 })();
 
-// ===== mobile nav
+// ===== mobile nav with hamburger animation
 (() => {
   const btn = document.querySelector(".menuBtn");
   const nav = document.querySelector(".navlinks");
   if (!btn || !nav) return;
-  btn.addEventListener("click", () => nav.classList.toggle("open"));
+
+  btn.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    btn.classList.toggle("active");
+  });
+
+  // Close menu when clicking a link
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      btn.classList.remove("active");
+    });
+  });
 })();
 
 // ===== load primary business record from CSV (first row) and fill above-the-fold

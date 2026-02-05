@@ -1,7 +1,16 @@
 id,topic,content,tags
-1,What are the Business hours,"We’re open most weekdays with weekend hours. Check the top of the page for today’s hours.",hours,location
-2,Where can I park,"Street parking is available nearby. Arrive 5–10 minutes early during peak times.",parking,location
-3,booking,"You can book online using the Book button, or call us directly for same-day availability.",booking,contact
-4,pricing,"We keep pricing transparent. Ask the front desk for current rates or message us from the contact page.",pricing,services
-5,reviews,"We embed review highlights on the homepage. You can also view our full profile on Google.",reviews,trust
-6,call,"You can reach us at (555) 201-0001 during business hours for any questions or assistance.",contact,phone
+1,hours,"We're open Monday through Friday 7AM-4PM, and weekends 8AM-3PM. Check the top of the page for today's hours.",hours,location
+2,parking,"Street parking is available on Maple St and surrounding blocks. There's also a public lot one block east. Arrive early during weekend brunch rush!",parking,location
+3,wifi,"Yes! We have free high-speed WiFi for all guests. The password is on your receipt, or just ask any barista.",wifi,amenities
+4,ordering,"You can order online for pickup using the Order Online button, or simply walk in and order at the counter.",ordering,pickup
+5,menu,"Our menu features artisan coffee drinks, fresh-baked pastries, and breakfast favorites. Try our signature Maple Latte! View the full menu on our Menu page.",menu,food,drinks
+6,dietary,"We offer dairy-free milk alternatives (oat, almond, coconut) at no extra charge. We also have gluten-free and vegan options - just ask your server!",dietary,vegan,gluten-free,dairy-free
+7,reservations,"We're a casual cafe - no reservations needed! Just walk in and grab a table. For large groups of 8+, give us a call ahead.",reservations,booking
+8,pricing,"Our coffee drinks range from $3.50-$6, pastries $3-$5, and breakfast items $9-$12. Check our menu for full pricing.",pricing,cost
+9,reviews,"We're proud of our 4.8 star rating! You can see review highlights on our homepage or visit our Google Business Profile for more.",reviews,ratings
+10,contact,"Give us a call at (555) 201-0001 during business hours, or send us a message through our contact page. We'd love to hear from you!",contact,phone
+11,location,"We're located at 123 Maple St in Atlanta, GA 30303. Look for the orange awning! Street parking available nearby.",location,address,directions
+12,coffee,"We serve locally roasted coffee with options including drip, espresso drinks, cold brew, and pour-over. Our beans are ethically sourced.",coffee,espresso,drinks
+13,breakfast,"Breakfast is served all day! Popular items include our Avocado Toast, Eggs Benedict, Breakfast Burrito, and Pancake Stack.",breakfast,food,brunch
+14,pastries,"Our pastries are baked fresh daily in-house. Favorites include butter croissants, blueberry muffins, cinnamon rolls, and banana bread.",pastries,bakery,fresh
+15,events,"We occasionally host community events and coffee tastings. Follow us on social media or ask in-store for upcoming events.",events,community

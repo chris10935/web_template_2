@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Maple Street Collective — Local Business Template</title>
+    <title>Maple Street Cafe — Fresh Coffee & Local Favorites</title>
     <meta
       name="description"
-      content="Mobile-first local business template with address, hours, click-to-call, map embed, reviews, and a CSV-based RAG starter."
+      content="Welcome to Maple Street Cafe - your neighborhood spot for artisan coffee, fresh pastries, and delicious local fare. Open daily for breakfast and lunch."
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -35,27 +35,31 @@
     <header class="header">
       <div class="wrap nav">
         <a class="brand" href="index.html">
-          <img src="assets/logo.svg" alt="Maple Street Collective logo" />
+          <img
+            src="https://images.pexels.com/photos/16742901/pexels-photo-16742901.jpeg?auto=compress&cs=tinysrgb&w=100"
+            alt="Maple Street Cafe logo"
+          />
           <div>
-            <div class="brand-name">Maple Street Collective</div>
-            <div class="brand-tag">Local business template (Launch tier)</div>
+            <div class="brand-name">Maple Street Cafe</div>
+            <div class="brand-tag">Coffee & Local Favorites</div>
           </div>
         </a>
 
         <button class="menuBtn" type="button" aria-label="Open menu">
-          Menu
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </button>
 
         <nav class="navlinks" aria-label="Site">
           <a class="active" href="index.html">Home</a>
-          <a href="services.html">Menu/Services</a>
+          <a href="services.html">Menu</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy</a>
           <a
             class="cta"
             href="https://www.doordash.com/?ignore_splash_experience=true&&utm_source=Bing&utm_medium=SEMb&utm_campaign=CX_US_SE_SB_BI_ACQ_TETXXX_386526262_RSTRNT_+BR_ACQ_INMKT_GenDeliveryxx_EVG_CPAx_EXA_TZEST_EN_EN_X_DOOR_BN_SE_TXT_XXXXXXXXXX&utm_term=doordash&utm_content=1217159816918473&kclickid=_k_3ad34687e662192386012ff83ca2ac00_k_&utm_adgroup_id=1217159816918473&utm_creative_id=&utm_keyword_id=kwd-76072842350870:loc-4090&msclkid=3ad34687e662192386012ff83ca2ac00&gclid=3ad34687e662192386012ff83ca2ac00&gclsrc=3p.ds&gad_source=7&gad_campaignid=12405704132l"
-            >Order Now
+            >Order Online
           </a>
         </nav>
       </div>
@@ -65,18 +69,18 @@
       <!-- ABOVE THE FOLD: address + hours + map + phone -->
       <section class="heroLocal">
         <div class="heroLeft">
-          <div class="pill">Local • Walk-ins welcome (placeholder)</div>
-          <h1>Fast service, clear pricing, and a place people trust.</h1>
+          <div class="pill">☕ Fresh • Local • Daily</div>
+          <h1>Your neighborhood cafe with heart & soul.</h1>
           <p class="lead">
-            This layout is designed for mobile traffic: call, directions, hours,
-            and reviews are front-and-center so visitors take action quickly.
+            Start your day right with artisan coffee, homemade pastries, and
+            breakfast favorites made with locally sourced ingredients.
           </p>
 
           <div class="actionRow">
             <a
               class="btn primary"
               href="https://www.doordash.com/?ignore_splash_experience=true&&utm_source=Bing&utm_medium=SEMb&utm_campaign=CX_US_SE_SB_BI_ACQ_TETXXX_386526262_RSTRNT_+BR_ACQ_INMKT_GenDeliveryxx_EVG_CPAx_EXA_TZEST_EN_EN_X_DOOR_BN_SE_TXT_XXXXXXXXXX&utm_term=doordash&utm_content=1217159816918473&kclickid=_k_3ad34687e662192386012ff83ca2ac00_k_&utm_adgroup_id=1217159816918473&utm_creative_id=&utm_keyword_id=kwd-76072842350870:loc-4090&msclkid=3ad34687e662192386012ff83ca2ac00&gclid=3ad34687e662192386012ff83ca2ac00&gclsrc=3p.ds&gad_source=7&gad_campaignid=12405704132"
-              >Order Now</a
+              >Order for Pickup</a
             >
             <a class="btn" id="callBtn" href="tel:+15552010001"
               >Call (555) 201-0001</a
@@ -162,9 +166,9 @@
 
       <!-- Reviews (Google/Yelp style cards) -->
       <section class="section">
-        <h2>What locals are saying</h2>
+        <h2>What our guests are saying</h2>
         <p class="sub">
-          Embed real reviews later. Keep them short and specific.
+          Real reviews from our wonderful community of coffee lovers.
         </p>
         <div class="grid3">
           <article class="card review">
@@ -176,8 +180,8 @@
               </div>
             </div>
             <p>
-              “Super fast service and the staff explained everything clearly.
-              Booking was easy.”
+              "Best latte in town! The baristas really know their craft and the
+              pastries are always fresh."
             </p>
           </article>
 
@@ -190,8 +194,8 @@
               </div>
             </div>
             <p>
-              “Clean space, friendly team, and the hours actually work for busy
-              schedules.”
+              "Cozy atmosphere, great WiFi, and the avocado toast is to die for.
+              My new favorite work spot!"
             </p>
           </article>
 
@@ -204,20 +208,18 @@
               </div>
             </div>
             <p>
-              “I called, got directions, and was in within minutes. Exactly what
-              I needed.”
+              "Stopped by for breakfast and I'm hooked. The eggs benedict and
+              their house blend coffee are perfect."
             </p>
           </article>
         </div>
-        <div class="note">
-          Tip: add a “View more reviews” link to your Google Business Profile.
-        </div>
+        <div class="note">🌟 Love your visit? Leave us a review on Google!</div>
       </section>
 
-      <!-- Menu/Services preview -->
+      <!-- Menu preview -->
       <section class="section">
-        <h2>Menu / services (simple, skimmable)</h2>
-        <p class="sub">Mobile users skim. Keep categories simple.</p>
+        <h2>From Our Kitchen</h2>
+        <p class="sub">Handcrafted drinks & fresh-made favorites, all day.</p>
 
         <div class="grid2">
           <div class="card">
@@ -256,26 +258,36 @@
 
       <!-- FAQ -->
       <section class="section">
-        <h2>Quick answers</h2>
-        <p class="sub">This is where people decide to call or bounce.</p>
+        <h2>Frequently Asked Questions</h2>
+        <p class="sub">Everything you need to know about visiting us.</p>
         <div class="faq">
           <details class="card">
-            <summary>Do you take walk-ins?</summary>
-            <p>Placeholder answer. Update based on your business rules.</p>
+            <summary>Do you have WiFi?</summary>
+            <p>
+              Yes! Free high-speed WiFi for all guests. Password is on your
+              receipt.
+            </p>
           </details>
           <details class="card">
             <summary>What are your busiest times?</summary>
-            <p>Placeholder answer. Mention best time to visit or book.</p>
+            <p>
+              Weekday mornings 7-9 AM tend to be busy. For a quieter experience,
+              try late morning or early afternoon.
+            </p>
           </details>
           <details class="card">
-            <summary>
-              Do you accept insurance / membership / reservations?
-            </summary>
-            <p>Placeholder answer. Keep it clear and short.</p>
+            <summary>Do you have dairy-free options?</summary>
+            <p>
+              Absolutely! We offer oat milk, almond milk, and coconut milk
+              alternatives at no extra charge.
+            </p>
           </details>
           <details class="card">
-            <summary>Can I book online?</summary>
-            <p>Yes—use the “Book” button. Replace with your booking link.</p>
+            <summary>Can I order online for pickup?</summary>
+            <p>
+              Yes! Use the "Order Online" button to place your order ahead and
+              skip the line.
+            </p>
           </details>
         </div>
       </section>
@@ -283,13 +295,13 @@
       <footer class="footer">
         <div class="footGrid">
           <div>
-            <strong>Maple Street Collective</strong>
-            <div class="muted">Local business template • Launch tier</div>
+            <strong>Maple Street Cafe</strong>
+            <div class="muted">Coffee & Local Favorites</div>
             <div class="muted">© <span id="year"></span></div>
           </div>
           <div>
             <strong>Quick links</strong><br />
-            <a class="link" href="services.html">Menu/Services</a><br />
+            <a class="link" href="services.html">Menu</a><br />
             <a class="link" href="contact.html">Contact</a><br />
             <a class="link" href="privacy.html">Privacy</a>
           </div>
