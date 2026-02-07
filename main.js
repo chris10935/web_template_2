@@ -10,9 +10,13 @@
   const nav = document.querySelector(".navlinks");
   if (!btn || !nav) return;
 
+  // Fix: Only toggle nav on mobile
   btn.addEventListener("click", () => {
-    nav.classList.toggle("open");
-    btn.classList.toggle("active");
+    // If nav is currently hidden, show it
+    if (window.innerWidth <= 920) {
+      nav.classList.toggle("open");
+      btn.classList.toggle("active");
+    }
   });
 
   // Close menu when clicking a link
@@ -21,6 +25,14 @@
       nav.classList.remove("open");
       btn.classList.remove("active");
     });
+  });
+
+  // Optional: Close menu on resize to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 920) {
+      nav.classList.remove("open");
+      btn.classList.remove("active");
+    }
   });
 })();
 
@@ -132,6 +144,7 @@
   const toggle = document.getElementById("ragToggle");
   const openHero = document.getElementById("openChatHero");
 
+  // Fix: allow chat to open even if RAG is not ready
   if (!fab || !panel || !body || !input || !send || !toggle) return;
 
   const addMsg = (role, text, sources = []) => {
@@ -180,24 +193,26 @@
 
   fab.addEventListener("click", show);
   if (openHero) openHero.addEventListener("click", show);
-  closeBtn.addEventListener("click", hide);
+  if (closeBtn) closeBtn.addEventListener("click", hide);
 
   // Init RAG index
   let ragState = null;
   let ragReady = false;
 
-  window.RAG.init({
-    businessCsvPath: "data/business.csv",
-    faqCsvPath: "data/faq_kb.csv",
-  })
-    .then((state) => {
-      ragState = state;
-      ragReady = true;
+  if (window.RAG && window.RAG.init) {
+    window.RAG.init({
+      businessCsvPath: "data/business.csv",
+      faqCsvPath: "data/faq_kb.csv",
     })
-    .catch((e) => {
-      ragReady = false;
-      console.warn("RAG init failed:", e);
-    });
+      .then((state) => {
+        ragState = state;
+        ragReady = true;
+      })
+      .catch((e) => {
+        ragReady = false;
+        console.warn("RAG init failed:", e);
+      });
+  }
 
   const handle = () => {
     const q = input.value.trim();
@@ -205,7 +220,13 @@
     input.value = "";
     addMsg("user", q);
 
-    if (toggle.checked && ragReady && ragState) {
+    if (
+      toggle.checked &&
+      ragReady &&
+      ragState &&
+      window.RAG &&
+      window.RAG.query
+    ) {
       const out = window.RAG.query(ragState, q, { k: 3 });
       addMsg("assistant", out.answer, out.sources);
     } else {

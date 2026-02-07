@@ -514,7 +514,7 @@ h2 {
     grid-template-columns: 1fr;
   }
   .menuBtn {
-    display: inline-flex;
+    display: inline-flex !important;
     z-index: 200;
     position: relative;
   }
@@ -537,7 +537,7 @@ h2 {
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.18);
   }
   .navlinks.open {
-    display: flex;
+    display: flex !important;
   }
   .navlinks a {
     width: 100%;
